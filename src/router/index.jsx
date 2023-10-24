@@ -3,22 +3,28 @@ import Examen from "../Examen";
     import App from "../App";
 import Error404 from "../Error404";
 import Layout from "../Layout";
+import Asignaturas from "../Asignaturas";
 const router = createBrowserRouter([
 {
-    path: "/",
     element:<Layout/>,
     children:[
         {
-            path:'/home',
+            path:'/',
             element: <App/>
         },
         
-{path : '/examenes',
-element: <Examen/>,
-},
-{path : "*",
-element:<Error404/>
-}
+        {
+            path : '/examenes',
+            element: <Examen/>,
+        },
+        {
+            path : "*",
+            element:<Error404/>
+        },
+        {
+            path : "/asignaturas",
+            element:<Asignaturas/>,
+        }
 
 
     ]
