@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Swal from 'sweetalert2';
-
+import "../App.css"
 function View() {
   const [ex, setEx] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -9,7 +9,7 @@ function View() {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get('http://localhost:8000/clase/api/api/');
+      const response = await axios.get('http://192.168.7.151:8000/clase/api/api/');
       setEx(response.data);
       setLoading(false);
     } catch (error) {
@@ -20,7 +20,7 @@ function View() {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:8000/clase/api/api/${id}/`);
+      await axios.delete(`http://192.168.7.151:8000/clase/api/api/${id}/`);
       setEx((prevEx) => prevEx.filter((item) => item.id !== id));
       Swal.fire(`Item ${id} deleted`);
     } catch (error) {
@@ -44,7 +44,7 @@ function View() {
     <div>
       <h3 className='text-center mb-1 mt-1'>Examenes</h3>
       <hr />
-      <div className='flex flex-row min-h-screen justify-center items-center'>
+      <div id="lista"className='flex flex-row min-h-screen justify-center items-center'>
       <ul className=''>
         {ex.map((item) => (
           <div key={item.id} className='max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 my-10'>

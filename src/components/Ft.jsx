@@ -10,10 +10,10 @@ if(data.asignature == "" || data.date == ""){
         footer: '<a href="">todos son requeridos</a>'
       })
 }else{
-    await axios.post('http://localhost:8000/clase/api/api/', data)
+    await axios.post('http://192.168.7.151:8000/clase/api/api/', data)
 }
 }
 export const gt = () => {
 
-    return axios.get('http://localhost:8000/clase/api/api/')
+    return axios.get('http://192.168.7.151:8000/clase/api/api/')
 }
