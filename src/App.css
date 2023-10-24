@@ -1,6 +1,10 @@
 input:focus{
     border:1px solid purple;
 }
-#lista{
-    margin-top: -6.3em;
+
+.Icono{
+    float:right;
+    margin-top:1em;
+    
+    
 }

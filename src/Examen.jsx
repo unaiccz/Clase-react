@@ -28,7 +28,7 @@ function Examen() {
   </div>
   <div className="flex items-start mb-6">
   </div>
-  <button type="submit" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ml-2" onClick={()=>   Swal.fire('examen añadido, porfavor reinicia')}>Crear</button>
+  <button type="submit" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ml-2">Crear</button>
   <button onClick={rl} className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ml-8">Reiniciar</button>
 </form>
   <View/>
@@ -37,20 +37,3 @@ function Examen() {
 }
 
 export default Examen;
-{/* <div>
-      <h1 className="text-black">Examenes</h1>
-          <form onSubmit={hs}>
-       <div className="mb-3 mx-5">
-       <input
-          type="text" className="form-control"
-          placeholder="asignature"
-          {...register("asignature")}
-        />
-        <input {...register("date")}  className="form-control" placeholder="Fecha"/>
-        <button type="submit" className="btn btn-primary" onClick={()=>   Swal.fire('examen añadido, please reload')}>send</button>
-        <br />
-        <button onClick={rl} className="btn btn-danger">Reload</button>
-       </div>
-      </form>
-      <View/>
-    </div> */}
