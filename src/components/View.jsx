@@ -50,6 +50,7 @@ function View() {
     
     <h3 className='text-center mb-1 mt-1'>Examenes</h3>
       <hr />
+      
       <button className='Icono'><BsGridFill/></button>
       <div id="lista"className={`${lista}`}>
       <ul className=''>
